@@ -1,23 +1,55 @@
 .main {
-  height: 100vh;
+  //height: 100vh; //ojo porque no dejamos espacio al footer
+  height: calc(100vh - 110px); //todo vh menos lo que ocupa footer
+  border-bottom: 1px solid $white-two;
   background-color: $lightgrey;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 
-.main__logo {
-  width: 250px;
-  height: 63px;
-  object-fit: contain;
-}
+  &__logo {
+    margin-top: 95px;
+    width: 250px;
+    height: 63px;
+    object-fit: contain;
+  }
 
-.main__title {
-  color: $dull-orange;
-  font-family: $font-titleMain;
-  font-size: 19px;
-  text-align: center;
-}
+  &__title {
+    color: $dull-orange;
+    font-family: $font-titleMain;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 35.4px;
+  }
 
-.main__text {
-  font-family: $font-generalTexts;
-  font-size: 13px;
-  text-align: center;
+  &__text {
+    font-family: $font-generalTexts;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 0px;
+  }
+  &__todo {
+    border: 1px solid $dull-orange;
+  }
+  &__button {
+    font-family: $font-generalTexts;
+    font-size: 16px;
+    font-weight: 600;
+    height: 42px;
+    width: 129px;
+    border-radius: 21px;
+    background-color: $dirty-blue;
+    text-align: center;
+    line-height: 42px;
+    color: $white;
+  }
+}
+//PONER EN COMPONENTS?
+.links {
+  text-decoration: none;
+}
+//PONER EN COMPONENTS?
+.uppercase {
+  text-transform: uppercase;
 }
