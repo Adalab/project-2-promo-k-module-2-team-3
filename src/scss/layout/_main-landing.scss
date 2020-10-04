@@ -1,0 +1,23 @@
+.main {
+  height: 100vh;
+  background-color: $lightgrey;
+}
+
+.main__logo {
+  width: 250px;
+  height: 63px;
+  object-fit: contain;
+}
+
+.main__title {
+  color: $dull-orange;
+  font-family: $font-titleMain;
+  font-size: 19px;
+  text-align: center;
+}
+
+.main__text {
+  font-family: $font-generalTexts;
+  font-size: 13px;
+  text-align: center;
+}
