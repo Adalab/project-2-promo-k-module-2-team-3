@@ -9,6 +9,11 @@
   bottom: 0px;
   padding: 18px 0 20px 0; //por ahora no hace falta laterales
 
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    padding: 10px 40px 10px 41px;
+  }
+
   &__copy {
     opacity: 0.5;
     font-family: $font-generalTexts;
@@ -20,5 +25,9 @@
     margin-top: 12px;
     height: 40px;
     object-fit: contain;
+
+    @media all and (min-width: 768px) {
+      margin-top: 0;
+    }
   }
 }
