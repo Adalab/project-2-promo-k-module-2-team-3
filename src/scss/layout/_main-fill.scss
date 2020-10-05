@@ -1,6 +1,6 @@
 .fill {
   border-top: 1px solid $white-two;
-  margin: 10px 19px 30px 20px;
+  margin: 0px 19px 30px 20px;
   &__title {
     display: flex;
     justify-content: space-between;
@@ -10,7 +10,7 @@
       display: flex;
       align-items: center;
       .keyboard {
-        width: 21px;
+        font-size: 18px;
         color: $dull-orange;
         margin-right: 8px;
       }
@@ -24,7 +24,7 @@
     }
     &--arrow {
       color: $reset-color;
-      height: 18px;
+      font-size: 18px;
     }
   }
   &__form {

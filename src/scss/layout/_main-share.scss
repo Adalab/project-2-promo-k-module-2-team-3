@@ -1,0 +1,53 @@
+.share {
+  border-top: 1px solid $white-two;
+  margin: 0px 19px 30px 20px;
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    &--container {
+      display: flex;
+      align-items: center;
+      .container-share {
+        font-size: 18px;
+        color: $dull-orange;
+        margin-right: 12px;
+      }
+      .container-text {
+        font-family: $font-generalTexts;
+        font-size: 18px;
+        font-weight: 600;
+        color: $reset-color;
+        text-transform: uppercase;
+      }
+    }
+    &--arrow {
+      color: $reset-color;
+      font-size: 18px;
+    }
+  }
+  &__button {
+    width: 199px;
+    height: 50px;
+    background-color: $dull-orange;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 30px auto;
+    &--icon {
+      font-size: 22px;
+    }
+    &--text {
+      font-family: $font-generalTexts;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-left: 9px;
+    }
+  }
+}
