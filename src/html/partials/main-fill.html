@@ -1,48 +1,64 @@
-<section>
-  <div>
-    <i class="far fa-keyboard"></i>
-    <h2>Rellena</h2>
-    <i class="fas fa-chevron-up"></i>
+<section class="fill">
+  <div class="fill__title">
+    <div class="fill__title--container">
+      <i class="far fa-keyboard keyboard"></i>
+      <h2 class="container--text">Rellena</h2>
+    </div>
+    <i class="fas fa-chevron-up fill__title--arrow"></i>
   </div>
-  <form action="" method="post">
-    <label for="name">Nombre completo</label>
-    <input type="text" id="name" name="name" placeholder="Ej: Sally Hill" />
-    <label for="work">Puesto</label>
+  <form class="fill__form" action="" method="post">
+    <label for="name" class="fill__form--label">Nombre completo</label>
     <input
+      class="fill__form--input"
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Ej: Sally Hill"
+    />
+    <label for="work" class="fill__form--label">Puesto</label>
+    <input
+      class="fill__form--input"
       type="text"
       id="work"
       name="work"
       placeholder="Ej: Front-end unicorn"
     />
-    <label for="img">Imagen de perfil</label>
-    <div>
-      <button>Añadir imagen</button>
-      <input type="text" id="img" name="img" />
-    </div>
-    <label for="mail">Email</label>
+    <label for="img" class="fill__form--label">Imagen de perfil</label>
+    <!-- <div> -->
+    <!-- <button>Añadir imagen</button> -->
+    <input class="fill__form--input" type="file" id="img" name="img" />
+    <!-- </div> -->
+    <label for="mail" class="fill__form--label">Email</label>
     <input
+      class="fill__form--input"
       type="email"
       id="mail"
       name="mail"
       placeholder="Ej: sally-hill@gmail.com"
     />
-    <label for="tel">Teléfono</label>
-    <input type="tel" id="tel" name="tel" placeholder="Ej: 555-55-55-55" />
-    <label for="linkedin">Linkedin</label>
+    <label for="tel" class="fill__form--label">Teléfono</label>
     <input
+      class="fill__form--input"
+      type="tel"
+      id="tel"
+      name="tel"
+      placeholder="Ej: 555-55-55-55"
+    />
+    <label for="linkedin" class="fill__form--label">Linkedin</label>
+    <input
+      class="fill__form--input"
       type="text"
       id="linkedin"
       name="linkedin"
       placeholder="Ej: linkedin.com/in/sally.hill"
     />
-    <label for="github">Github</label>
+    <label for="github" class="fill__form--label">Github</label>
     <input
+      class="fill__form--input"
       type="text"
       id="github"
       name="github"
       placeholder="Ej: @sally-hill"
     />
   </form>
-
-  Rellena <br />
 </section>
