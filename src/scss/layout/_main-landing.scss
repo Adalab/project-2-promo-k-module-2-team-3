@@ -1,18 +1,17 @@
+.body {
+  height: 100vh;
+}
 .main {
-  //height: 100vh; //ojo porque no dejamos espacio al footer
-  height: calc(100vh - 110px); //todo vh menos lo que ocupa footer
+  height: 100%; //Damos altura en vh para poder dar porcentajes dentro
   border-bottom: 1px solid $white-two;
   background-color: $lightgrey;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 95px 27.2px 30px 28px;
-
+  justify-content: center;
+  // padding: 95px 27.2px 30px 28px;
   @media all and (min-width: 768px) {
-    height: calc(100vh - 60px);
-    justify-content: flex-start;
-    padding: 350px 175px 59px 175px;
+    // padding: 350px 175px 59px 175px;
   }
 
   &__logo {
@@ -41,11 +40,10 @@
     font-family: $font-generalTexts;
     font-size: 13px;
     text-align: center;
-    margin-top: -35px;
+    width: 265px;
     @media all and (min-width: 768px) {
       font-size: 16px;
-      margin-top: 0px;
-      max-width: 331px;
+      width: 331px;
     }
   }
   &__icons {
@@ -58,7 +56,7 @@
     height: 73.8px;
     margin-top: 17.8px;
     @media all and (min-width: 768px) {
-      margin: 27px 0 186px 0;
+      margin-top: 27px;
     }
 
     &__item {
@@ -92,6 +90,10 @@
     text-align: center;
     line-height: 42px;
     color: $white;
+    margin-top: 38.6px;
+    @media all and (min-height: 720px) {
+      margin-top: 186px;
+    }
   }
 }
 //PONER EN COMPONENTS?
