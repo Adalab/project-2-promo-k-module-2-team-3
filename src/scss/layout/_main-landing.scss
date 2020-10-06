@@ -1,18 +1,20 @@
+.body {
+  height: 100vh;
+  background-color: $lightgrey;
+}
 .main {
-  //height: 100vh; //ojo porque no dejamos espacio al footer
-  height: calc(100vh - 110px); //todo vh menos lo que ocupa footer
+  //todo vh menos lo que ocupa footer
   border-bottom: 1px solid $white-two;
   background-color: $lightgrey;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 95px 27.2px 30px 28px;
+  // justify-content: space-between;
+  padding-top: 95px;
 
   @media all and (min-width: 768px) {
-    height: calc(100vh - 60px);
     justify-content: flex-start;
-    padding: 350px 175px 59px 175px;
+    padding-top: 350px;
   }
 
   &__logo {
@@ -38,14 +40,15 @@
   }
 
   &__text {
+    width: 265px;
     font-family: $font-generalTexts;
     font-size: 13px;
     text-align: center;
-    margin-top: -35px;
+    // margin-top: -35px;
     @media all and (min-width: 768px) {
+      width: 331px;
       font-size: 16px;
       margin-top: 0px;
-      max-width: 331px;
     }
   }
   &__icons {
@@ -59,6 +62,7 @@
     margin-top: 17.8px;
     @media all and (min-width: 768px) {
       margin: 27px 0 186px 0;
+      height: 86px;
     }
 
     &__item {
@@ -91,7 +95,13 @@
     background-color: $dirty-blue;
     text-align: center;
     line-height: 42px;
+    margin-top: 38.6px;
+    margin-bottom: 30px;
     color: $white;
+    @media all and (min-width: 768px) {
+      margin-top: 0px;
+      margin-bottom: 59px;
+    }
   }
 }
 //PONER EN COMPONENTS?
