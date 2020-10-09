@@ -1,90 +1,54 @@
-// .design {
-//   margin: 0px 19px 30px 20px;
+.design {
+  margin: 27px 20px 30px 20px;
 
-//   &__title {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 10px 0 5px 0;
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 22px 0;
 
-//     &--container {
-//       display: flex;
-//       align-items: center;
+    &--arrow {
+            color: $reset-color;
+            font-size: 18px;
+          }
 
-//       .keyboard {
-//         font-size: 18px;
-//         color: $dull-orange;
-//         margin-right: 8px;
-//       }
+    &--container {
+      display: flex;
+      align-items: center;
 
-//       .container--text {
-//         font-family: $font-generalTexts;
-//         font-size: 18px;
-//         font-weight: 600;
-//         color: $reset-color;
-//         text-transform: uppercase;
-//       }
-//     }
+      &--text {
+                font-family: $font-generalTexts;
+                font-size: 18px;
+                font-weight: 600;
+                color: $reset-color;
+                text-transform: uppercase;
+              }
+    }
+  }
+  &-icon {
+    font-size: 18px;
+    color: $dull-orange;
+    margin-right: 8px;
+  }
+ &__form {
+    display: flex;
+    justify-content: space-between;
 
-//     &--arrow {
-//       color: $reset-color;
-//       font-size: 18px;
-//     }
-//   }
+    &--label {
+            
+            font-family: $font-generalTexts;
+            color: $dark-text;
+            font-size: 14px;
+            line-height: 20px;
+          }
+}
+}
 
-//   &__form {
-//     display: flex;
-//     flex-direction: column;
+//----------
+.uppercase {
+  text-transform: uppercase;
+}
 
-//     &--label {
-//       padding: 20px 0 7px 0;
-//       font-family: $font-generalTexts;
-//       color: $dark-text;
-//       font-size: 14px;
-//       line-height: 20px;
-//     }
-
-//     &--input {
-//       height: 30px;
-//       border: 1px solid $border-links-color;
-//       padding: 3px 0 7px 9px;
-//       font-family: $font-generalTexts;
-
-//       &::-webkit-input-placeholder {
-//         color: $placeholder-color;
-//       }
-//     }
-//   }
-// }
-
-// //----------
-// .uppercase {
-//   text-transform: uppercase;
-// }
-
-// .design .design__form--colors {
-//   display: flex;
-
-// }
-
-// .design__form--palette1__color1 {
-//   background-color: $black;
-//   height: 25px;
-//   width: 30px;
-
-// }
-
-// .design__form--palette1__color2 {
-//   height: 25px;
-//   width: 30px;
-//   background-color: $dark-text;
-// }
-
-// .design__form--palette1__color3 {
-//   background-color: $dirty-blue;
-//   height: 25px;
-//   width: 30px;
-// }
 .design__container__options {
   width: 7.5rem;
   display: inline-block;

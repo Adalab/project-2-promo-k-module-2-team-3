@@ -6,8 +6,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
-  bottom: 0px;
   padding: 18px 0 20px 0; //por ahora no hace falta laterales
 
   @media all and (min-width: 768px) {
@@ -23,7 +21,6 @@
     line-height: 1.43;
     color: $brownish-grey;
   }
-
   &__logo {
     margin-top: 12px;
     height: 40px;
