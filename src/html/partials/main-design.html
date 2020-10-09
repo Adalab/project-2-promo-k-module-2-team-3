@@ -9,14 +9,39 @@
   <form class="design__form" action="" method="post">
     <p class="design__form--label uppercase">Colores</p>
 
-    <input class="design__form--palette" type="radio" id="palette" name="palette" />
+    <!-- <input class="design__form--palette" type="radio" id="palette" name="palette" />
     <label for="palette" class="design__form--label">
       <div class="design__form--colors">
         <div class="design__form--palette1__color1"></div>
         <div class="design__form--palette1__color2"></div>
         <div class="design__form--palette1__color3"></div>
       </div>
-    </label>
-
-
+    </label> -->
+    <div class="design__container__options">
+      <label for="cold" class="design__container__options__cold">
+        <input type="radio" id="cold" name="palette" value="1" checked="" />
+        <div class="palette-cold">
+          <span class="a"></span>
+          <span class="b"></span>
+          <span class="c"></span>
+        </div>
+      </label>
+      <label for="warm" class="design__container__options__warm warm">
+        <input id="warm" type="radio" name="palette" value="2" />
+        <div class="palette-warm">
+          <span class="a"></span>
+          <span class="b"></span>
+          <span class="c"></span>
+        </div>
+      </label>
+      <label for="medium" class="design__container__options__medium">
+        <input id="medium" type="radio" name="palette" value="3" />
+        <div class="palette-medium">
+          <span class="a"></span>
+          <span class="b"></span>
+          <span class="c"></span>
+        </div>
+      </label>
+    </div>
+  </form>
 </section>
