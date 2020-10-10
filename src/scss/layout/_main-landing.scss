@@ -40,11 +40,13 @@
   }
 
   &__text {
+    width: 265px;
     font-family: $font-generalTexts;
     font-size: 13px;
     text-align: center;
     width: 265px;
     @media all and (min-width: 768px) {
+      width: 331px;
       font-size: 16px;
       width: 331px;
     }
@@ -92,6 +94,8 @@
     background-color: $dirty-blue;
     text-align: center;
     line-height: 42px;
+    margin-top: 38.6px;
+    margin-bottom: 30px;
     color: $white;
     margin-top: 38.6px;
     @media all and (min-height: 720px) {
