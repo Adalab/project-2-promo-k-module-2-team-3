@@ -8,21 +8,21 @@
     padding: 10px 0 22px 0;
 
     &--arrow {
-            color: $reset-color;
-            font-size: 18px;
-          }
+      color: $reset-color;
+      font-size: 18px;
+    }
 
     &--container {
       display: flex;
       align-items: center;
 
       &--text {
-                font-family: $font-generalTexts;
-                font-size: 18px;
-                font-weight: 600;
-                color: $reset-color;
-                text-transform: uppercase;
-              }
+        font-family: $font-generalTexts;
+        font-size: 18px;
+        font-weight: 600;
+        color: $reset-color;
+        text-transform: uppercase;
+      }
     }
   }
   &-icon {
@@ -30,18 +30,20 @@
     color: $dull-orange;
     margin-right: 8px;
   }
- &__form {
+  &__form {
     display: flex;
     justify-content: space-between;
 
     &--label {
-            
-            font-family: $font-generalTexts;
-            color: $dark-text;
-            font-size: 14px;
-            line-height: 20px;
-          }
-}
+      font-family: $font-generalTexts;
+      color: $dark-text;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  @media all and (min-width: 768px) {
+    margin: 0 20px 30px 20px;
+  }
 }
 
 //----------

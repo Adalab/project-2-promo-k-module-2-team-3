@@ -2,6 +2,19 @@
   background: linear-gradient(to bottom, $background-first, $background-second);
   height: 457px;
   padding: 38px 35px 40px 45px;
+  @media all and (min-width: 768px) {
+    height: 100%;
+    grid-column: 2/3;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    align-items: center;
+    .preview-button-div {
+      width: 240px;
+    }
+  }
   &__button {
     width: 75px;
     height: 30px;
