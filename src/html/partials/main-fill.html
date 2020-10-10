@@ -25,8 +25,21 @@
     />
     <label for="img" class="fill__form--label">Imagen de perfil</label>
     <!-- <div> -->
-    <!-- <button>Añadir imagen</button> -->
-    <input class="fill__form--input" type="file" id="img" name="img" />
+
+    <div class="action">
+      <button class="action__upload-btn js__profile-trigger" type="button">
+        Añadir imagen
+      </button>
+      <input
+        type="file"
+        name=""
+        id="img-selector"
+        class="action__hiddenField js__profile-upload-btn"
+      />
+
+      <div class="profile__preview js__profile-preview"></div>
+    </div>
+
     <!-- </div> -->
     <label for="mail" class="fill__form--label">Email</label>
     <input
