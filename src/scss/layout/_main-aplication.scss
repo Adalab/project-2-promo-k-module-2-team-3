@@ -1,3 +1,5 @@
+@import "layout/js-collapsables";
+
 .main-aplication {
   @media all and (min-width: 768px) {
     background: linear-gradient(to bottom, $lightgrey, $white);
