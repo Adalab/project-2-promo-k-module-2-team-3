@@ -84,40 +84,137 @@
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
   }
+}
+//PALETTE COLD
+.palette-cold .a {
+  background-color: $dark-text;
+}
 
-  .palette-cold .a {
-    background-color: $dark-text;
+.preview__card--text {
+  h3 {
+    &.js-paletteColdA {
+      color: $dark-text;
+    }
   }
+}
 
-  .palette-cold .b {
-    background-color: $dirty-blue;
+.preview__card--nav {
+  li a i {
+    &.js-paletteColdA {
+      color: $dark-text;
+    }
   }
+}
 
-  .palette-cold .c {
-    background-color: $border-links-color;
+.palette-cold .b {
+  background-color: $dirty-blue;
+}
+
+.preview__card--text {
+  h4 {
+    &.js-paletteColdB {
+      color: $dirty-blue;
+    }
   }
+}
 
-  .palette-warm .a {
-    background-color: $dried-blood;
+.palette-cold .c {
+  background-color: $border-links-color;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteColdC {
+      border: 2px solid $border-links-color;
+    }
   }
+}
 
-  .palette-warm .b {
-    background-color: $rusty-red;
+//PALETTE WARM
+.palette-warm .a {
+  background-color: $dried-blood;
+}
+.preview__card--text {
+  h3 {
+    &.js-paletteWarmA {
+      color: $dried-blood;
+    }
   }
+}
 
-  .palette-warm .c {
-    background-color: $tomato;
+.preview__card--nav {
+  li a i {
+    &.js-paletteWarmA {
+      color: $dried-blood;
+    }
   }
+}
 
-  .palette-medium .a {
-    background-color: $slate;
+.palette-warm .b {
+  background-color: $rusty-red;
+}
+
+.preview__card--text {
+  h4 {
+    &.js-paletteWarmB {
+      color: $rusty-red;
+    }
   }
+}
 
-  .palette-medium .b {
-    background-color: $faded-orange;
+.palette-warm .c {
+  background-color: $tomato;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteWarmC {
+      border: 2px solid $tomato;
+    }
   }
+}
 
-  .palette-medium .c {
-    background-color: $light-grey-blue;
+//PALETTE MEDIUM
+.palette-medium .a {
+  background-color: $slate;
+}
+
+.preview__card--text {
+  h3 {
+    &.js-paletteMediumA {
+      color: $slate;
+    }
+  }
+}
+
+.preview__card--nav {
+  li a i {
+    &.js-paletteMediumA {
+      color: $slate;
+    }
+  }
+}
+
+.palette-medium .b {
+  background-color: $faded-orange;
+}
+
+.preview__card--text {
+  h4 {
+    &.js-paletteMediumB {
+      color: $faded-orange;
+    }
+  }
+}
+
+.palette-medium .c {
+  background-color: $light-grey-blue;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteMediumC {
+      border: 2px solid $light-grey-blue;
+    }
   }
 }
