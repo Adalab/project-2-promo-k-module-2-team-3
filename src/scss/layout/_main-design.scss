@@ -1196,5 +1196,719 @@
     &.js-paletteMediumC {
       border: 2px solid $light-grey-blue;
     }
+    &.js-paletteColdB {
+      border-left: 5px solid $dirty-blue;
+    }
+  }
+}
+
+.palette-cold .c {
+  background-color: $border-links-color;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteColdC {
+      border: 2px solid $border-links-color;
+    }
+  }
+}
+
+//PALETTE WARM
+.palette-warm .a {
+  background-color: $dried-blood;
+}
+
+.preview__card--text {
+  h3 {
+    &.js-paletteWarmA {
+      color: $dried-blood;
+    }
+  }
+}
+
+.preview__card--nav {
+  li a i {
+    &.js-paletteWarmA {
+      color: $dried-blood;
+    }
+  }
+}
+
+.palette-warm .b {
+  background-color: $rusty-red;
+}
+
+.preview__card--text {
+  h4 {
+    &.js-paletteWarmB {
+      color: $rusty-red;
+    }
+  }
+}
+.preview__card {
+  .preview__card--text.js-warm {
+    &.js-paletteWarmB {
+      border-left: 5px solid $rusty-red;
+    }
+  }
+}
+
+.palette-warm .c {
+  background-color: $tomato;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteWarmC {
+      border: 2px solid $tomato;
+    }
+  }
+}
+
+//PALETTE MEDIUM
+.palette-medium .a {
+  background-color: $slate;
+}
+
+.preview__card--text {
+  h3 {
+    &.js-paletteMediumA {
+      color: $slate;
+    }
+  }
+}
+
+.preview__card--nav {
+  li a i {
+    &.js-paletteMediumA {
+      color: $slate;
+    }
+  }
+}
+
+.palette-medium .b {
+  background-color: $faded-orange;
+}
+
+.preview__card--text {
+  h4 {
+    &.js-paletteMediumB {
+      color: $faded-orange;
+    }
+  }
+}
+.preview__card {
+  .preview__card--text.js-medium {
+    &.js-paletteMediumB {
+      border-left: 5px solid $faded-orange;
+    }
+  }
+}
+
+.palette-medium .c {
+  background-color: $light-grey-blue;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteMediumC {
+      border: 2px solid $light-grey-blue;
+    }
+    &.js-paletteColdB {
+      border-left: 5px solid $dirty-blue;
+    }
+  }
+}
+
+.palette-cold .c {
+  background-color: $border-links-color;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteColdC {
+      border: 2px solid $border-links-color;
+    }
+  }
+}
+
+//PALETTE WARM
+.palette-warm .a {
+  background-color: $dried-blood;
+}
+
+.preview__card--text {
+  h3 {
+    &.js-paletteWarmA {
+      color: $dried-blood;
+    }
+  }
+}
+
+.preview__card--nav {
+  li a i {
+    &.js-paletteWarmA {
+      color: $dried-blood;
+    }
+  }
+}
+
+.palette-warm .b {
+  background-color: $rusty-red;
+}
+
+.preview__card--text {
+  h4 {
+    &.js-paletteWarmB {
+      color: $rusty-red;
+    }
+  }
+}
+.preview__card {
+  .preview__card--text.js-warm {
+    &.js-paletteWarmB {
+      border-left: 5px solid $rusty-red;
+    }
+  }
+}
+
+.palette-warm .c {
+  background-color: $tomato;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteWarmC {
+      border: 2px solid $tomato;
+    }
+  }
+}
+
+//PALETTE MEDIUM
+.palette-medium .a {
+  background-color: $slate;
+}
+
+.preview__card--text {
+  h3 {
+    &.js-paletteMediumA {
+      color: $slate;
+    }
+  }
+}
+
+.preview__card--nav {
+  li a i {
+    &.js-paletteMediumA {
+      color: $slate;
+    }
+  }
+}
+
+.palette-medium .b {
+  background-color: $faded-orange;
+}
+
+.preview__card--text {
+  h4 {
+    &.js-paletteMediumB {
+      color: $faded-orange;
+    }
+  }
+}
+.preview__card {
+  .preview__card--text.js-medium {
+    &.js-paletteMediumB {
+      border-left: 5px solid $faded-orange;
+    }
+  }
+}
+
+.palette-medium .c {
+  background-color: $light-grey-blue;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteMediumC {
+      border: 2px solid $light-grey-blue;
+    }
+    &.js-paletteColdB {
+      border-left: 5px solid $dirty-blue;
+    }
+  }
+}
+
+.palette-cold .c {
+  background-color: $border-links-color;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteColdC {
+      border: 2px solid $border-links-color;
+    }
+  }
+}
+
+//PALETTE WARM
+.palette-warm .a {
+  background-color: $dried-blood;
+}
+
+.preview__card--text {
+  h3 {
+    &.js-paletteWarmA {
+      color: $dried-blood;
+    }
+  }
+}
+
+.preview__card--nav {
+  li a i {
+    &.js-paletteWarmA {
+      color: $dried-blood;
+    }
+  }
+}
+
+.palette-warm .b {
+  background-color: $rusty-red;
+}
+
+.preview__card--text {
+  h4 {
+    &.js-paletteWarmB {
+      color: $rusty-red;
+    }
+  }
+}
+.preview__card {
+  .preview__card--text.js-warm {
+    &.js-paletteWarmB {
+      border-left: 5px solid $rusty-red;
+    }
+  }
+}
+
+.palette-warm .c {
+  background-color: $tomato;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteWarmC {
+      border: 2px solid $tomato;
+    }
+  }
+}
+
+//PALETTE MEDIUM
+.palette-medium .a {
+  background-color: $slate;
+}
+
+.preview__card--text {
+  h3 {
+    &.js-paletteMediumA {
+      color: $slate;
+    }
+  }
+}
+
+.preview__card--nav {
+  li a i {
+    &.js-paletteMediumA {
+      color: $slate;
+    }
+  }
+}
+
+.palette-medium .b {
+  background-color: $faded-orange;
+}
+
+.preview__card--text {
+  h4 {
+    &.js-paletteMediumB {
+      color: $faded-orange;
+    }
+  }
+}
+.preview__card {
+  .preview__card--text.js-medium {
+    &.js-paletteMediumB {
+      border-left: 5px solid $faded-orange;
+    }
+  }
+}
+
+.palette-medium .c {
+  background-color: $light-grey-blue;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteMediumC {
+      border: 2px solid $light-grey-blue;
+    }
+    &.js-paletteColdB {
+      border-left: 5px solid $dirty-blue;
+    }
+  }
+}
+
+.palette-cold .c {
+  background-color: $border-links-color;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteColdC {
+      border: 2px solid $border-links-color;
+    }
+  }
+}
+
+//PALETTE WARM
+.palette-warm .a {
+  background-color: $dried-blood;
+}
+
+.preview__card--text {
+  h3 {
+    &.js-paletteWarmA {
+      color: $dried-blood;
+    }
+  }
+}
+
+.preview__card--nav {
+  li a i {
+    &.js-paletteWarmA {
+      color: $dried-blood;
+    }
+  }
+}
+
+.palette-warm .b {
+  background-color: $rusty-red;
+}
+
+.preview__card--text {
+  h4 {
+    &.js-paletteWarmB {
+      color: $rusty-red;
+    }
+  }
+}
+.preview__card {
+  .preview__card--text.js-warm {
+    &.js-paletteWarmB {
+      border-left: 5px solid $rusty-red;
+    }
+  }
+}
+
+.palette-warm .c {
+  background-color: $tomato;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteWarmC {
+      border: 2px solid $tomato;
+    }
+  }
+}
+
+//PALETTE MEDIUM
+.palette-medium .a {
+  background-color: $slate;
+}
+
+.preview__card--text {
+  h3 {
+    &.js-paletteMediumA {
+      color: $slate;
+    }
+  }
+}
+
+.preview__card--nav {
+  li a i {
+    &.js-paletteMediumA {
+      color: $slate;
+    }
+  }
+}
+
+.palette-medium .b {
+  background-color: $faded-orange;
+}
+
+.preview__card--text {
+  h4 {
+    &.js-paletteMediumB {
+      color: $faded-orange;
+    }
+  }
+}
+.preview__card {
+  .preview__card--text.js-medium {
+    &.js-paletteMediumB {
+      border-left: 5px solid $faded-orange;
+    }
+  }
+}
+
+.palette-medium .c {
+  background-color: $light-grey-blue;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteMediumC {
+      border: 2px solid $light-grey-blue;
+    }
+    &.js-paletteColdB {
+      border-left: 5px solid $dirty-blue;
+    }
+  }
+}
+
+.palette-cold .c {
+  background-color: $border-links-color;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteColdC {
+      border: 2px solid $border-links-color;
+    }
+  }
+}
+
+//PALETTE WARM
+.palette-warm .a {
+  background-color: $dried-blood;
+}
+
+.preview__card--text {
+  h3 {
+    &.js-paletteWarmA {
+      color: $dried-blood;
+    }
+  }
+}
+
+.preview__card--nav {
+  li a i {
+    &.js-paletteWarmA {
+      color: $dried-blood;
+    }
+  }
+}
+
+.palette-warm .b {
+  background-color: $rusty-red;
+}
+
+.preview__card--text {
+  h4 {
+    &.js-paletteWarmB {
+      color: $rusty-red;
+    }
+  }
+}
+.preview__card {
+  .preview__card--text.js-warm {
+    &.js-paletteWarmB {
+      border-left: 5px solid $rusty-red;
+    }
+  }
+}
+
+.palette-warm .c {
+  background-color: $tomato;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteWarmC {
+      border: 2px solid $tomato;
+    }
+  }
+}
+
+//PALETTE MEDIUM
+.palette-medium .a {
+  background-color: $slate;
+}
+
+.preview__card--text {
+  h3 {
+    &.js-paletteMediumA {
+      color: $slate;
+    }
+  }
+}
+
+.preview__card--nav {
+  li a i {
+    &.js-paletteMediumA {
+      color: $slate;
+    }
+  }
+}
+
+.palette-medium .b {
+  background-color: $faded-orange;
+}
+
+.preview__card--text {
+  h4 {
+    &.js-paletteMediumB {
+      color: $faded-orange;
+    }
+  }
+}
+.preview__card {
+  .preview__card--text.js-medium {
+    &.js-paletteMediumB {
+      border-left: 5px solid $faded-orange;
+    }
+  }
+}
+
+.palette-medium .c {
+  background-color: $light-grey-blue;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteMediumC {
+      border: 2px solid $light-grey-blue;
+    }
+    &.js-paletteColdB {
+      border-left: 5px solid $dirty-blue;
+    }
+  }
+}
+
+.palette-cold .c {
+  background-color: $border-links-color;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteColdC {
+      border: 2px solid $border-links-color;
+    }
+  }
+}
+
+//PALETTE WARM
+.palette-warm .a {
+  background-color: $dried-blood;
+}
+
+.preview__card--text {
+  h3 {
+    &.js-paletteWarmA {
+      color: $dried-blood;
+    }
+  }
+}
+
+.preview__card--nav {
+  li a i {
+    &.js-paletteWarmA {
+      color: $dried-blood;
+    }
+  }
+}
+
+.palette-warm .b {
+  background-color: $rusty-red;
+}
+
+.preview__card--text {
+  h4 {
+    &.js-paletteWarmB {
+      color: $rusty-red;
+    }
+  }
+}
+.preview__card {
+  .preview__card--text.js-warm {
+    &.js-paletteWarmB {
+      border-left: 5px solid $rusty-red;
+    }
+  }
+}
+
+.palette-warm .c {
+  background-color: $tomato;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteWarmC {
+      border: 2px solid $tomato;
+    }
+  }
+}
+
+//PALETTE MEDIUM
+.palette-medium .a {
+  background-color: $slate;
+}
+
+.preview__card--text {
+  h3 {
+    &.js-paletteMediumA {
+      color: $slate;
+    }
+  }
+}
+
+.preview__card--nav {
+  li a i {
+    &.js-paletteMediumA {
+      color: $slate;
+    }
+  }
+}
+
+.palette-medium .b {
+  background-color: $faded-orange;
+}
+
+.preview__card--text {
+  h4 {
+    &.js-paletteMediumB {
+      color: $faded-orange;
+    }
+  }
+}
+.preview__card {
+  .preview__card--text.js-medium {
+    &.js-paletteMediumB {
+      border-left: 5px solid $faded-orange;
+    }
+  }
+}
+
+.palette-medium .c {
+  background-color: $light-grey-blue;
+}
+
+.preview__card--nav {
+  li a {
+    &.js-paletteMediumC {
+      border: 2px solid $light-grey-blue;
+    }
   }
 }
