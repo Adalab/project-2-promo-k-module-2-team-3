@@ -2,11 +2,13 @@
   border-top: 1px solid $white-two;
   border-bottom: 1px solid $white-two;
   margin: 0px 19px 30px 20px;
+  z-index: 10;
   &__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
+
     &--container {
       display: flex;
       align-items: center;
@@ -26,6 +28,12 @@
     &--arrow {
       color: $reset-color;
       font-size: 18px;
+      padding: 5px; //zona clickable
+
+      &:hover {
+        background-color: $faded-orange;
+        transition: 0.5s ease;
+      }
     }
   }
   &__button {
@@ -40,6 +48,7 @@
     justify-content: center;
     align-items: center;
     margin: 30px auto 30px auto;
+    z-index: 20;
     &--icon {
       font-size: 22px;
     }
@@ -52,6 +61,7 @@
     }
   }
   &__finish {
+    // border-bottom: 1px solid $white-two;
     border-top: 1px solid $white-two;
     padding: 20px 0 30px 0;
     display: flex;
@@ -96,5 +106,8 @@
   }
   .js-button-create {
     background-color: $white-three;
+  }
+  .js__finish-hidden {
+    display: none;
   }
 }

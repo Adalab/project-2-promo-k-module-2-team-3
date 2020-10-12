@@ -25,6 +25,12 @@
     &--arrow {
       color: $reset-color;
       font-size: 18px;
+      padding: 5px; //zona clickable
+      z-index: 2;
+      &:hover {
+        background-color: $faded-orange;
+        transition: 0.5s ease;
+      }
     }
   }
   &__form {
