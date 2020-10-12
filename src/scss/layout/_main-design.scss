@@ -1,5 +1,7 @@
+
 .design {
   margin: 27px 20px 30px 20px;
+ 
 
   &__title {
     display: flex;
@@ -10,6 +12,12 @@
     &--arrow {
       color: $reset-color;
       font-size: 18px;
+      padding: 5px; //zona clickable
+
+      &:hover{
+        background-color: $faded-orange;
+        transition: 0.5s ease;
+      }
     }
 
     &--container {
@@ -121,3 +129,5 @@
     background-color: $light-grey-blue;
   }
 }
+
+

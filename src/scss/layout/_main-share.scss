@@ -7,6 +7,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
+  
     &--container {
       display: flex;
       align-items: center;
@@ -26,6 +27,12 @@
     &--arrow {
       color: $reset-color;
       font-size: 18px;
+      padding: 5px; //zona clickable
+      z-index: 10;
+      &:hover{
+        background-color: $faded-orange;
+        transition: 0.5s ease;
+      }
     }
   }
   &__button {
