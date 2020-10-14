@@ -15,8 +15,14 @@ const previewReset = document.querySelector(".js__profile-preview");
 function fillpreview(event, i) {
   if (i === 0) {
     previewName.innerHTML = event.currentTarget.value;
+    if (!event.currentTarget.value) {
+      previewName.innerHTML = "Nombre Apellido";
+    }
   } else if (i === 1) {
     previewJob.innerHTML = event.currentTarget.value;
+    if (!event.currentTarget.value) {
+      previewJob.innerHTML = "Front-end developer";
+    }
   } else if (i === 2) {
     const mailLink = "mailto:" + event.currentTarget.value;
     previewMail.setAttribute("href", mailLink);
@@ -24,10 +30,11 @@ function fillpreview(event, i) {
     const phoneLink = "tel:" + event.currentTarget.value;
     previewPhone.setAttribute("href", phoneLink);
   } else if (i === 4) {
-    const linkedinLink = event.currentTarget.value;
+    const linkedinLink =
+      "https://www.linkedin.com/in/" + event.currentTarget.value;
     previewLinkedin.setAttribute("href", linkedinLink);
   } else {
-    const githubLink = event.currentTarget.value;
+    const githubLink = "https://github.com/" + event.currentTarget.value;
     previewGithub.setAttribute("href", githubLink);
   }
 }
