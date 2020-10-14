@@ -1,0 +1,33 @@
+.palette1 {
+  & .icons {
+    border-color: $hospital-green;
+  }
+  & .text-name {
+    color: $dark-green-blue;
+  }
+  & .preview__card--text {
+    border-color: $dirty-blue;
+  }
+}
+.palette2 {
+  & .icons {
+    border-color: $tomato;
+  }
+  & .text-name {
+    color: $dried-blood;
+  }
+  & .preview__card--text {
+    border-color: $rusty-red;
+  }
+}
+.palette3 {
+  & .icons {
+    border-color: $light-grey-blue;
+  }
+  & .text-name {
+    color: $slate;
+  }
+  & .preview__card--text {
+    border-color: $faded-orange;
+  }
+}

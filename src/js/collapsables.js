@@ -4,9 +4,8 @@
 //listener de arrow
 const arrowEls = document.querySelectorAll('.fa-chevron-up'); //puede ser cualquiera de los 3 arrows.
 
-
-
 const clickArrow = function (event) {
+  event.preventDefault();
   //deberemos deferenciar qué sección ha sido clickada y si pliega o despliega. Según clases activas..
   console.log(event.target);
   const element = event.target;
