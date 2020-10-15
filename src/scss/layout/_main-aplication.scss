@@ -2,7 +2,7 @@
 
 .main-aplication {
   @media all and (min-width: 768px) {
-    min-height: 856px;
+    min-height: calc(100vh - 171px);
     background: linear-gradient(to bottom, $lightgrey, $white);
     padding: 20px 40px 20px 20px;
     display: grid;

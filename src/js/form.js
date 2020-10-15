@@ -12,37 +12,35 @@ const resetButton = document.querySelector(".js__btn-reset");
 const profileReset = document.querySelector(".js__profile-image");
 const previewReset = document.querySelector(".js__profile-preview");
 
-function fillpreview(event, i) {
-  if (i === 0) {
-    previewName.innerHTML = event.currentTarget.value;
-    if (!event.currentTarget.value) {
-      previewName.innerHTML = "Nombre Apellido";
-    }
-  } else if (i === 1) {
-    previewJob.innerHTML = event.currentTarget.value;
-    if (!event.currentTarget.value) {
-      previewJob.innerHTML = "Front-end developer";
-    }
-  } else if (i === 2) {
-    const mailLink = "mailto:" + event.currentTarget.value;
-    previewMail.setAttribute("href", mailLink);
-  } else if (i === 3) {
-    const phoneLink = "tel:" + event.currentTarget.value;
-    previewPhone.setAttribute("href", phoneLink);
-  } else if (i === 4) {
-    const linkedinLink =
-      "https://www.linkedin.com/in/" + event.currentTarget.value;
-    previewLinkedin.setAttribute("href", linkedinLink);
-  } else {
-    const githubLink = "https://github.com/" + event.currentTarget.value;
-    previewGithub.setAttribute("href", githubLink);
+function fillpreview() {
+  const inputNameValue = document.querySelector(".js-input-name").value;
+  previewName.innerHTML = inputNameValue;
+  if (!inputNameValue) {
+    previewName.innerHTML = "Nombre Apellido";
   }
+  const inputJobValue = document.querySelector(".js-input-job").value;
+  previewJob.innerHTML = inputJobValue;
+  if (!inputJobValue) {
+    previewJob.innerHTML = "Front-end developer";
+  }
+  const mailLink = "mailto:" + document.querySelector(".js-input-mail").value;
+  previewMail.setAttribute("href", mailLink);
+
+  const phoneLink = "tel:" + document.querySelector(".js-input-phone").value;
+  previewPhone.setAttribute("href", phoneLink);
+
+  const linkedinLink =
+    "https://www.linkedin.com/in/" +
+    document.querySelector(".js-input-linkedin").value;
+  previewLinkedin.setAttribute("href", linkedinLink);
+
+  const githubLink =
+    "https://github.com/" + document.querySelector(".js-input-github").value;
+  previewGithub.setAttribute("href", githubLink);
 }
 
 for (let i = 0; i < form.length; i++) {
-  form[i].addEventListener("keyup", function () {
-    fillpreview(event, i);
-  });
+  form[i].addEventListener("keyup", fillpreview);
 }
 
 function reset() {
