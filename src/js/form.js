@@ -47,12 +47,8 @@ function reset() {
   for (let i = 0; i < form.length; i++) {
     form[i].value = "";
   }
-  previewName.innerHTML = "Nombre Apellido";
-  previewJob.innerHTML = "Front-end unicornio";
-  previewMail.removeAttribute("href");
-  previewPhone.removeAttribute("href");
-  previewLinkedin.removeAttribute("href");
-  previewGithub.removeAttribute("href");
+  inputElementCold.click();
+  fillpreview();
   profileReset.style.backgroundImage =
     "url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE)";
   previewReset.style.backgroundImage = "";

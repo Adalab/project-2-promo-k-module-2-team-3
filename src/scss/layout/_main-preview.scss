@@ -25,6 +25,9 @@
     background-color: transparent;
     border: 1px solid $white;
     border-radius: 15px;
+    &:hover {
+      cursor: pointer;
+    }
     &--trash {
       color: $reset-color;
       width: 11px;

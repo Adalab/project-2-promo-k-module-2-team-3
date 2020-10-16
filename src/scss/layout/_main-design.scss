@@ -6,7 +6,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 0 22px 0;
-
+    &:hover {
+      cursor: pointer;
+    }
     &--arrow {
       color: $reset-color;
       font-size: 18px;
@@ -34,6 +36,7 @@
   &__form {
     display: flex;
     justify-content: space-between;
+    transition: 0.5s linear;
 
     &--label {
       font-family: $font-generalTexts;
@@ -64,6 +67,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .palette-cold,

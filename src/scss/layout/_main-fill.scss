@@ -6,6 +6,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 0 5px 0;
+    &:hover {
+      cursor: pointer;
+    }
     &--container {
       display: flex;
       align-items: center;

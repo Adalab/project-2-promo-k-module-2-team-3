@@ -8,7 +8,9 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
-
+    &:hover {
+      cursor: pointer;
+    }
     &--container {
       display: flex;
       align-items: center;
@@ -43,6 +45,9 @@
     align-items: center;
     margin: 30px auto 30px auto;
     z-index: 20;
+    &:hover {
+      cursor: pointer;
+    }
     &--icon {
       font-size: 22px;
     }
