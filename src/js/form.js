@@ -49,8 +49,7 @@ function reset() {
   }
   inputElementCold.click();
   fillpreview();
-  profileReset.style.backgroundImage =
-    "url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE)";
+  profileReset.style.backgroundImage = "url('./assets/images/totoro.jpg')";
   previewReset.style.backgroundImage = "";
 }
 resetButton.addEventListener("click", reset);

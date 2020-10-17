@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 0 22px 0;
-    &:hover {
+    j &:hover {
       cursor: pointer;
     }
     &--arrow {
@@ -92,173 +92,80 @@
     margin-bottom: 1.25rem;
   }
 }
-//PALETTE COLD
+
+//DESIGN PALETTES
 .palette-cold .a {
   background-color: $dark-text;
-}
-
-.preview__card--text {
-  h3 {
-    &.js-paletteColdA {
-      color: $dark-text;
-    }
-  }
-}
-
-.preview__card--nav {
-  li a i {
-    &.js-paletteColdA {
-      color: $dark-text;
-    }
-  }
 }
 
 .palette-cold .b {
   background-color: $dirty-blue;
 }
-
-.preview__card--text {
-  h4 {
-    &.js-paletteColdB {
-      color: $dirty-blue;
-    }
-  }
-}
-.preview__card {
-  .preview__card--text.js-cold {
-    &.js-paletteColdB {
-      border-left: 5px solid $dirty-blue;
-    }
-  }
-}
-
 .palette-cold .c {
   background-color: $border-links-color;
 }
 
-.preview__card--nav {
-  li a {
-    &.js-paletteColdC {
-      border: 2px solid $border-links-color;
-    }
-  }
-}
-
-//PALETTE WARM
 .palette-warm .a {
   background-color: $dried-blood;
-}
-
-.preview__card--text {
-  h3 {
-    &.js-paletteWarmA {
-      color: $dried-blood;
-    }
-  }
-}
-
-.preview__card--nav {
-  li a i {
-    &.js-paletteWarmA {
-      color: $dried-blood;
-    }
-  }
 }
 
 .palette-warm .b {
   background-color: $rusty-red;
 }
-
-.preview__card--text {
-  h4 {
-    &.js-paletteWarmB {
-      color: $rusty-red;
-    }
-  }
-}
-.preview__card {
-  .preview__card--text.js-warm {
-    &.js-paletteWarmB {
-      border-left: 5px solid $rusty-red;
-    }
-  }
-}
-
 .palette-warm .c {
   background-color: $tomato;
 }
 
-.preview__card--nav {
-  li a {
-    &.js-paletteWarmC {
-      border: 2px solid $tomato;
-    }
-  }
-}
-
-//PALETTE MEDIUM
 .palette-medium .a {
   background-color: $slate;
 }
-
-.preview__card--text {
-  h3 {
-    &.js-paletteMediumA {
-      color: $slate;
-    }
-  }
-}
-
-.preview__card--nav {
-  li a i {
-    &.js-paletteMediumA {
-      color: $slate;
-    }
-  }
-}
-
 .palette-medium .b {
   background-color: $faded-orange;
-}
-
-.preview__card--text {
-  h4 {
-    &.js-paletteMediumB {
-      color: $faded-orange;
-    }
-  }
-}
-.preview__card {
-  .preview__card--text.js-medium {
-    &.js-paletteMediumB {
-      border-left: 5px solid $faded-orange;
-    }
-  }
 }
 
 .palette-medium .c {
   background-color: $light-grey-blue;
 }
+//PALETTE COLD
 
-.preview__card--nav {
-  li a {
-    &.js-paletteMediumC {
-      border: 2px solid $light-grey-blue;
-    }
-    &.js-paletteColdB {
-      border-left: 5px solid $dirty-blue;
-    }
+.js-paletteCold {
+  & .js-text-name {
+    color: $dark-text;
+  }
+  & .js-preview__card--text {
+    border-color: $dirty-blue;
+  }
+  & .js-icons {
+    border-color: $border-links-color;
+    color: $dark-text;
   }
 }
 
-.palette-cold .c {
-  background-color: $border-links-color;
+//PALETTE WARM
+.js-paletteWarm {
+  & .js-text-name {
+    color: $dried-blood;
+  }
+  & .js-preview__card--text {
+    border-color: $rusty-red;
+  }
+  & .js-icons {
+    border-color: $tomato;
+    color: $dried-blood;
+  }
 }
 
-.preview__card--nav {
-  li a {
-    &.js-paletteColdC {
-      border: 2px solid $border-links-color;
-    }
+//PALETTE MEDIUM
+
+.js-paletteMedium {
+  & .js-text-name {
+    color: $slate;
+  }
+  & .js-preview__card--text {
+    border-color: $faded-orange;
+  }
+  & .js-icons {
+    border-color: $light-grey-blue;
+    color: $slate;
   }
 }
