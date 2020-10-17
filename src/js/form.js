@@ -11,32 +11,33 @@ const previewGithub = document.querySelector(".js__preview-github");
 const resetButton = document.querySelector(".js__btn-reset");
 const profileReset = document.querySelector(".js__profile-image");
 const previewReset = document.querySelector(".js__profile-preview");
+const inputName = document.querySelector(".js-input-name");
+const inputJob = document.querySelector(".js-input-job");
+const mailLink = document.querySelector(".js-input-mail");
+const phoneLink = document.querySelector(".js-input-phone");
+const linkedinLink = document.querySelector(".js-input-linkedin");
+const githubLink = document.querySelector(".js-input-github");
 
 function fillpreview() {
-  const inputNameValue = document.querySelector(".js-input-name").value;
-  previewName.innerHTML = inputNameValue;
-  if (!inputNameValue) {
+  previewName.innerHTML = inputName.value;
+  if (!inputName.value) {
     previewName.innerHTML = "Nombre Apellido";
   }
-  const inputJobValue = document.querySelector(".js-input-job").value;
-  previewJob.innerHTML = inputJobValue;
-  if (!inputJobValue) {
+
+  previewJob.innerHTML = inputJob.value;
+  if (!inputJob.value) {
     previewJob.innerHTML = "Front-end developer";
   }
-  const mailLink = "mailto:" + document.querySelector(".js-input-mail").value;
-  previewMail.setAttribute("href", mailLink);
+  const mailString = "mailto:" + mailLink.value;
+  previewMail.setAttribute("href", mailString);
+  const phoneString = "tel:" + phoneLink.value;
+  previewPhone.setAttribute("href", phoneString);
 
-  const phoneLink = "tel:" + document.querySelector(".js-input-phone").value;
-  previewPhone.setAttribute("href", phoneLink);
+  const linkedinString = "https://www.linkedin.com/in/" + linkedinLink.value;
+  previewLinkedin.setAttribute("href", linkedinString);
 
-  const linkedinLink =
-    "https://www.linkedin.com/in/" +
-    document.querySelector(".js-input-linkedin").value;
-  previewLinkedin.setAttribute("href", linkedinLink);
-
-  const githubLink =
-    "https://github.com/" + document.querySelector(".js-input-github").value;
-  previewGithub.setAttribute("href", githubLink);
+  const githubString = "https://github.com/" + githubLink.value;
+  previewGithub.setAttribute("href", githubString);
 }
 
 for (let i = 0; i < form.length; i++) {
