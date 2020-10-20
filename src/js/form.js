@@ -11,12 +11,6 @@ const previewGithub = document.querySelector(".js__preview-github");
 const resetButton = document.querySelector(".js__btn-reset");
 const profileReset = document.querySelector(".js__profile-image");
 const previewReset = document.querySelector(".js__profile-preview");
-const inputName = document.querySelector(".js-input-name");
-const inputJob = document.querySelector(".js-input-job");
-const mailLink = document.querySelector(".js-input-mail");
-const phoneLink = document.querySelector(".js-input-phone");
-const linkedinLink = document.querySelector(".js-input-linkedin");
-const githubLink = document.querySelector(".js-input-github");
 
 const data = {
   palette: "",
@@ -109,34 +103,6 @@ function getErrors() {
 
     // console.log(message);
   }
-  }
-  //Create element con content message
-  if (message === "") {
-    btn.classList.add("js-button-create");
-    btn.removeAttribute("disabled");
-    const items = document
-      .querySelector(".share__section")
-      .querySelector(".paragraph");
-    items.remove();
-  } else {
-    //buscamos el p anterior si existiera en esta sección
-    if (document.querySelector(".paragraph")) {
-      const items = document
-        .querySelector(".share__section")
-        .querySelector(".paragraph");
-      items.remove();
-    }
-    //Creamos el elemento parrafo de errores.
-    const p = document.createElement("p");
-    const messageText = document.createTextNode(message);
-    p.appendChild(messageText);
-    p.style = "color:red; font-family:open-sans; font-size:10px; margin:10px";
-    p.classList.add("paragraph");
-    document.querySelector(".share__section").insertBefore(p, btn);
-
-    // console.log(message);
-  }
->>>>>>> issues
 }
 
 for (let i = 0; i < form.length; i++) {
