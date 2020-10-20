@@ -18,33 +18,140 @@ const phoneLink = document.querySelector(".js-input-phone");
 const linkedinLink = document.querySelector(".js-input-linkedin");
 const githubLink = document.querySelector(".js-input-github");
 
+const data = {
+  palette: "",
+  name: "",
+  job: "",
+  phone: "",
+  email: "",
+  linkedin: "",
+  github: "",
+  photo: "",
+};
+
+function saveField(ev) {
+  const inputKey = ev.currentTarget.name;
+  data[inputKey] = ev.currentTarget.value;
+  //setToLocalStorage();
+  fillpreview();
+}
+
 function fillpreview() {
-  previewName.innerHTML = inputName.value;
-  if (!inputName.value) {
-    previewName.innerHTML = "Nombre Apellido";
-  }
-
-  previewJob.innerHTML = inputJob.value;
-  if (!inputJob.value) {
-    previewJob.innerHTML = "Front-end developer";
-  }
-  const mailString = "mailto:" + mailLink.value;
-  previewMail.setAttribute("href", mailString);
-  const phoneString = "tel:" + phoneLink.value;
-  previewPhone.setAttribute("href", phoneString);
-
-  const linkedinString = "https://www.linkedin.com/in/" + linkedinLink.value;
-  previewLinkedin.setAttribute("href", linkedinString);
-
-  const githubString = "https://github.com/" + githubLink.value;
-  previewGithub.setAttribute("href", githubString);
+  previewName.innerHTML = data.name || "Nombre Apellido";
+  previewJob.innerHTML = data.job || "Front-end developer";
+  const mailLink = "mailto:" + data.email;
+  previewMail.setAttribute("href", mailLink);
+  const phoneLink = "tel:" + data.phone;
+  previewPhone.setAttribute("href", phoneLink);
+  const linkedinLink = "https://www.linkedin.com/in/" + data.linkedin;
+  previewLinkedin.setAttribute("href", linkedinLink);
+  const githubLink = "https://github.com/" + data.github;
+  previewGithub.setAttribute("href", githubLink);
 }
 
 for (let i = 0; i < form.length; i++) {
-  form[i].addEventListener("keyup", fillpreview);
+  form[i].addEventListener("keyup", saveField);
+}
+
+function validarEmail(email) {
+  let regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email) ? true : false;
+}
+
+function validarTelf(phoneNumber) {
+  let regex = /^[9|6]{1}([\d]{2}[-]*){3}[\d]{2}$/;
+  return regex.test(phoneNumber) ? true : false;
+}
+
+function getErrors() {
+  let message = "";
+  if (!data.name) {
+    message += "Tienes que rellenar tu nombre. ";
+  }
+  if (!data.job) {
+    message += "Tienes que rellenar tu puesto de trabajo. ";
+  }
+
+  if (!data.email) {
+    message += "Tienes que rellenar tu email. ";
+  } else if (validarEmail(data.email) === false) {
+    message += `${data.email} no es un email correcto. `;
+  }
+
+  if (!data.phone) {
+    message += "Tienes que rellenar tu teléfono. ";
+  } else if (validarTelf(data.phone) === false) {
+    message += `${data.phone} no es un número de teléfono correcto. `;
+  }
+  //Create element con content message
+  if (message === "") {
+    btn.classList.add("js-button-create");
+    btn.removeAttribute("disabled");
+    const items = document
+      .querySelector(".share__section")
+      .querySelector(".paragraph");
+    items.remove();
+  } else {
+    //buscamos el p anterior si existiera en esta sección
+    if (document.querySelector(".paragraph")) {
+      const items = document
+        .querySelector(".share__section")
+        .querySelector(".paragraph");
+      items.remove();
+    }
+    //Creamos el elemento parrafo de errores.
+    const p = document.createElement("p");
+    const messageText = document.createTextNode(message);
+    p.appendChild(messageText);
+    p.style = "color:red; font-family:open-sans; font-size:10px; margin:10px";
+    p.classList.add("paragraph");
+    document.querySelector(".share__section").insertBefore(p, btn);
+
+    // console.log(message);
+  }
+  }
+  //Create element con content message
+  if (message === "") {
+    btn.classList.add("js-button-create");
+    btn.removeAttribute("disabled");
+    const items = document
+      .querySelector(".share__section")
+      .querySelector(".paragraph");
+    items.remove();
+  } else {
+    //buscamos el p anterior si existiera en esta sección
+    if (document.querySelector(".paragraph")) {
+      const items = document
+        .querySelector(".share__section")
+        .querySelector(".paragraph");
+      items.remove();
+    }
+    //Creamos el elemento parrafo de errores.
+    const p = document.createElement("p");
+    const messageText = document.createTextNode(message);
+    p.appendChild(messageText);
+    p.style = "color:red; font-family:open-sans; font-size:10px; margin:10px";
+    p.classList.add("paragraph");
+    document.querySelector(".share__section").insertBefore(p, btn);
+
+    // console.log(message);
+  }
+>>>>>>> issues
+}
+
+for (let i = 0; i < form.length; i++) {
+  form[i].addEventListener("blur", getErrors);
 }
 
 function reset() {
+  data.palette = "";
+  data.name = "";
+  data.job = "";
+  data.phone = "";
+  data.email = "";
+  data.linkedin = "";
+  data.github = "";
+  data.photo = "";
   for (let i = 0; i < form.length; i++) {
     form[i].value = "";
   }
