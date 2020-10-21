@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 /* eslint-disable quotes */
 "use strict";
 
@@ -25,14 +26,15 @@ let data = {
 
 function getInfoToStorage() {
   let mydata = localStorage.getItem("userData");
-  data = JSON.parse(mydata);
-  if (data !== null) {
-    form[0].value = data.name;
-    form[1].value = data.job;
-    form[2].value = data.email;
-    form[3].value = data.phone;
-    form[4].value = data.linkedin;
-    form[5].value = data.github;
+  mydata = JSON.parse(mydata);
+  if (mydata !== null) {
+    form[0].value = mydata.name;
+    form[1].value = mydata.job;
+    form[2].value = mydata.email;
+    form[3].value = mydata.phone;
+    form[4].value = mydata.linkedin;
+    form[5].value = mydata.github;
+    data = mydata;
     fillpreview();
   }
 }
@@ -64,6 +66,10 @@ function fillpreview() {
 
 for (let i = 0; i < form.length; i++) {
   form[i].addEventListener("keyup", saveField);
+}
+
+for (let i = 0; i < form.length; i++) {
+  form[i].addEventListener("blur", getErrors);
 }
 
 function validarEmail(email) {
@@ -98,14 +104,19 @@ function getErrors() {
   }
   //Create element con content message
   if (message === "") {
+    // eslint-disable-next-line no-undef
     btn.classList.add("js-button-create");
+    // eslint-disable-next-line no-undef
     btn.removeAttribute("disabled");
     const items = document
       .querySelector(".share__section")
       .querySelector(".paragraph");
-    items.remove();
+    if (items !== null) {
+      items.remove();
+    }
   } else {
     //buscamos el p anterior si existiera en esta sección
+    btn.classList.remove("js-button-create");
     if (document.querySelector(".paragraph")) {
       const items = document
         .querySelector(".share__section")
@@ -118,6 +129,7 @@ function getErrors() {
     p.appendChild(messageText);
     p.style = "color:red; font-family:open-sans; font-size:10px; margin:10px";
     p.classList.add("paragraph");
+    // eslint-disable-next-line no-undef
     document.querySelector(".share__section").insertBefore(p, btn);
 
     // console.log(message);
@@ -136,6 +148,8 @@ function reset() {
   for (let i = 0; i < form.length; i++) {
     form[i].value = "";
   }
+  localStorage.removeItem("userData");
+  // eslint-disable-next-line no-undef
   inputElementCold.click();
   fillpreview();
   profileReset.style.backgroundImage = "url('./assets/images/totoro.jpg')";
@@ -145,7 +159,3 @@ resetButton.addEventListener("click", reset);
 
 //START APP
 getInfoToStorage();
-
-for (let i = 0; i < form.length; i++) {
-  form[i].addEventListener("blur", getErrors);
-}
