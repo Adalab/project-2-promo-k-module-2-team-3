@@ -27,12 +27,15 @@
   </head>
   <body>
     <header class="header">
-      <img
+      <a href="./index.html">
+        <img
         src="./assets/images/logo-awesome-profile-cards.svg"
         alt="Logo de la página"
         title="Logo de la página"
         class="header__img"
-      />
+        />
+      </a>
+      
     </header>
 
     <main class="main-aplication">
@@ -43,10 +46,8 @@
             <p class="preview__button--text">Reset</p>
           </button>
         </div>
-        <div class="preview__card">
-          <div
-            class="preview__card--text js-cold js-warm js-medium js-preview__card--text"
-          >
+        <div class="preview__card js-preview__card">
+          <div class="preview__card--text js-preview__card--text">
             <h3 class="text-name js__preview-name js-text-name">Nombre Apellido</h3>
             <h4 class="text-work js__preview-job js-text-work">
               Front-end developer
@@ -54,30 +55,28 @@
           </div>
           <div
             class="profile__image preview__card--img js__profile-image"
-            style="
-              background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
-            "
+            style="background-image: url('./assets/images/totoro.jpg')"
           ></div>
           <nav>
             <ul class="preview__card--nav">
               <li>
                 <a href="" class="icons js__preview-phone js-icons" target="blank">
-                  <i class="fas fa-mobile-alt js-socialNetworks"></i>
+                  <i class="fas fa-mobile-alt"></i>
                 </a>
               </li>
               <li>
                 <a href="" class="icons js__preview-mail js-icons" target="blank">
-                  <i class="far fa-envelope js-socialNetworks"></i>
+                  <i class="far fa-envelope"></i>
                 </a>
               </li>
               <li>
                 <a href="" class="icons js__preview-linkedin js-icons" target="blank">
-                  <i class="fab fa-linkedin-in js-socialNetworks"></i>
+                  <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
               <li>
                 <a href="" class="icons js__preview-github js-icons" target="blank">
-                  <i class="fab fa-github-alt js-socialNetworks"></i>
+                  <i class="fab fa-github-alt"></i>
                 </a>
               </li>
             </ul>
@@ -87,7 +86,7 @@
 
       <section class="main-aplication__section">
         <section class="design">
-          <div class="design__title">
+          <div class="design__title js-collapsable-title">
             <div class="design__title--container">
               <i class="far fa-object-ungroup design-icon"></i>
               <h2 class="design__title--container--text">Diseña</h2>
@@ -146,7 +145,7 @@
         </section>
 
         <section class="fill">
-          <div class="fill__title">
+          <div class="fill__title js-collapsable-title">
             <div class="fill__title--container">
               <i class="far fa-keyboard keyboard"></i>
               <h2 class="container--text">Rellena</h2>
@@ -156,7 +155,7 @@
           <form class="fill__form js-fill__form" action="" method="post">
             <label for="name" class="fill__form--label">Nombre completo</label>
             <input
-              class="fill__form--input js__form"
+              class="fill__form--input js__form js-input-name"
               type="text"
               id="name"
               name="name"
@@ -165,10 +164,10 @@
             />
             <label for="work" class="fill__form--label">Puesto</label>
             <input
-              class="fill__form--input js__form"
+              class="fill__form--input js__form js-input-job"
               type="text"
               id="work"
-              name="work"
+              name="job"
               placeholder="Ej: Front-end unicorn"
               maxlength="24"
             />
@@ -190,25 +189,27 @@
             </div>
 
             <!-- </div> -->
-            <label for="mail" class="fill__form--label">Email</label>
+            <label for="email" class="fill__form--label">Email</label>
             <input
-              class="fill__form--input js__form"
+              class="fill__form--input js__form js-input-mail"
               type="email"
-              id="mail"
-              name="mail"
+              id="email"
+              name="email"
               placeholder="Ej: sally-hill@gmail.com"
             />
-            <label for="tel" class="fill__form--label js__label-phone">Teléfono</label>
+            <label for="phone" class="fill__form--label js__label-phone"
+              >Teléfono</label
+            >
             <input
-              class="fill__form--input js__form"
+              class="fill__form--input js__form js-input-phone"
               type="tel"
-              id="tel"
-              name="tel"
+              id="phone"
+              name="phone"
               placeholder="Ej: 555-55-55-55"
             />
             <label for="linkedin" class="fill__form--label">Linkedin</label>
             <input
-              class="fill__form--input js__form"
+              class="fill__form--input js__form js-input-linkedin"
               type="text"
               id="linkedin"
               name="linkedin"
@@ -216,7 +217,7 @@
             />
             <label for="github" class="fill__form--label">Github</label>
             <input
-              class="fill__form--input js__form"
+              class="fill__form--input js__form js-input-github"
               type="text"
               id="github"
               name="github"
@@ -226,7 +227,7 @@
         </section>
 
         <section class="share js-share">
-          <div class="share__title">
+          <div class="share__title js-collapsable-title">
             <div class="share__title--container">
               <i class="fas fa-share-alt container-share"></i>
               <h2 class="container-text">Comparte</h2>
@@ -234,7 +235,7 @@
             <i class="fas fa-chevron-up js-fa-chevron-up share__title--arrow"></i>
           </div>
           <div class="share__section js-share__section">
-            <button class="share__button js__btn">
+            <button class="share__button js__btn" disabled>
               <i class="far fa-address-card share__button--icon"></i>
               <p class="share__button--text">Crear tarjeta</p>
             </button>
@@ -255,7 +256,7 @@
       </section>
     </main>
     <footer class="footer ">
-      <small class="footer__copy">Awesome profile-cards &copy; 2018 </small>
+      <small class="footer__copy">Script Girls. Awesome profile-cards &copy; 2020 </small>
       <img class=footer__logo src="./assets/images/logo-adalab.png" title="Logo Adalab" alt="Logo Adalab">
     </footer>
     <script type="text/javascript" src="./assets/js/main.js"></script>
