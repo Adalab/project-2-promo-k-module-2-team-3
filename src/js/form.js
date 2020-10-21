@@ -148,6 +148,7 @@ function reset() {
   for (let i = 0; i < form.length; i++) {
     form[i].value = "";
   }
+  localStorage.removeItem("userData");
   // eslint-disable-next-line no-undef
   inputElementCold.click();
   fillpreview();
