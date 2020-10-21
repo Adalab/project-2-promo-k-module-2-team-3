@@ -12,7 +12,7 @@ const resetButton = document.querySelector(".js__btn-reset");
 const profileReset = document.querySelector(".js__profile-image");
 const previewReset = document.querySelector(".js__profile-preview");
 
-const data = {
+let data = {
   palette: "",
   name: "",
   job: "",
@@ -23,10 +23,29 @@ const data = {
   photo: "",
 };
 
+function getInfoToStorage() {
+  let mydata = localStorage.getItem("userData");
+  data = JSON.parse(mydata);
+  if (data !== null) {
+    form[0].value = data.name;
+    form[1].value = data.job;
+    form[2].value = data.email;
+    form[3].value = data.phone;
+    form[4].value = data.linkedin;
+    form[5].value = data.github;
+    fillpreview();
+  }
+}
+
+function setToLocalStorage() {
+  const stringData = JSON.stringify(data);
+  localStorage.setItem("userData", stringData);
+}
+
 function saveField(ev) {
   const inputKey = ev.currentTarget.name;
   data[inputKey] = ev.currentTarget.value;
-  //setToLocalStorage();
+  setToLocalStorage();
   fillpreview();
 }
 
@@ -105,10 +124,6 @@ function getErrors() {
   }
 }
 
-for (let i = 0; i < form.length; i++) {
-  form[i].addEventListener("blur", getErrors);
-}
-
 function reset() {
   data.palette = "";
   data.name = "";
@@ -127,3 +142,10 @@ function reset() {
   previewReset.style.backgroundImage = "";
 }
 resetButton.addEventListener("click", reset);
+
+//START APP
+getInfoToStorage();
+
+for (let i = 0; i < form.length; i++) {
+  form[i].addEventListener("blur", getErrors);
+}
