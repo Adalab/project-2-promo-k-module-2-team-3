@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 "use strict";
 
 const inputElementCold = document.querySelector(".js-inputCold");

@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 "use strict";
 
 const btn = document.querySelector(".js__btn");
