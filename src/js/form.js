@@ -12,6 +12,10 @@ const previewGithub = document.querySelector(".js__preview-github");
 const resetButton = document.querySelector(".js__btn-reset");
 const profileReset = document.querySelector(".js__profile-image");
 const previewReset = document.querySelector(".js__profile-preview");
+const previewElement = document.querySelector(".js-preview__card");
+const inputElementCold = document.querySelector(".js-inputCold");
+const inputElementWarm = document.querySelector(".js-inputWarm");
+const inputElementMedium = document.querySelector(".js-inputMedium");
 
 let data = {
   palette: "",
@@ -35,6 +39,16 @@ function getInfoToStorage() {
     form[4].value = mydata.linkedin;
     form[5].value = mydata.github;
     data = mydata;
+    if (data.palette === "1") {
+      changeCold();
+      inputElementCold.click();
+    } else if (data.palette === "2") {
+      changeWarm();
+      inputElementWarm.click();
+    } else if (data.palette === "3") {
+      changeMedium();
+      inputElementMedium.click();
+    }
     fillpreview();
   }
 }
