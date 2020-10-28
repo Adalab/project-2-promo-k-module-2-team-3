@@ -12,6 +12,11 @@ const previewGithub = document.querySelector(".js__preview-github");
 const resetButton = document.querySelector(".js__btn-reset");
 const profileReset = document.querySelector(".js__profile-image");
 const previewReset = document.querySelector(".js__profile-preview");
+const previewElement = document.querySelector(".js-preview__card");
+const inputElementCold = document.querySelector(".js-inputCold");
+const inputElementWarm = document.querySelector(".js-inputWarm");
+const inputElementMedium = document.querySelector(".js-inputMedium");
+const btn = document.querySelector(".js__btn");
 
 let data = {
   palette: "",
@@ -35,7 +40,22 @@ function getInfoToStorage() {
     form[4].value = mydata.linkedin;
     form[5].value = mydata.github;
     data = mydata;
+    if (data.palette === 1) {
+      changeCold();
+      inputElementCold.click();
+    } else if (data.palette === 2) {
+      changeWarm();
+      inputElementWarm.click();
+    } else if (data.palette === 3) {
+      changeMedium();
+      inputElementMedium.click();
+    }
+    if (data.photo !== null) {
+      profileReset.style.backgroundImage = `url(${data.photo})`;
+      previewReset.style.backgroundImage = `url(${data.photo})`;
+    }
     fillpreview();
+    getErrors();
   }
 }
 
@@ -102,6 +122,12 @@ function getErrors() {
   } else if (validarTelf(data.phone) === false) {
     message += `${data.phone} no es un número de teléfono correcto. `;
   }
+  if (!data.linkedin) {
+    message += "Tienes que rellenar tu Linkedin. ";
+  }
+  if (!data.github) {
+    message += "Tienes que rellenar tu Github. ";
+  }
   //Create element con content message
   if (message === "") {
     // eslint-disable-next-line no-undef
@@ -127,7 +153,7 @@ function getErrors() {
     const p = document.createElement("p");
     const messageText = document.createTextNode(message);
     p.appendChild(messageText);
-    p.style = "color:red; font-family:open-sans; font-size:10px; margin:10px";
+    p.style = "color:red; font-size:10px; margin:10px";
     p.classList.add("paragraph");
     // eslint-disable-next-line no-undef
     document.querySelector(".share__section").insertBefore(p, btn);
@@ -144,7 +170,7 @@ function reset() {
   data.email = "";
   data.linkedin = "";
   data.github = "";
-  data.photo = "";
+  data.photo = "url('./assets/images/totoro.jpg')";
   for (let i = 0; i < form.length; i++) {
     form[i].value = "";
   }
@@ -154,6 +180,7 @@ function reset() {
   fillpreview();
   profileReset.style.backgroundImage = "url('./assets/images/totoro.jpg')";
   previewReset.style.backgroundImage = "";
+  setToLocalStorage();
 }
 resetButton.addEventListener("click", reset);
 

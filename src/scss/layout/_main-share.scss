@@ -110,4 +110,11 @@
   .js__finish-hidden {
     display: none;
   }
+  .card-link {
+    text-decoration: none;
+    color: $dull-orange;
+  }
+  .paragraph {
+    font-family: $font-generalTexts;
+  }
 }
