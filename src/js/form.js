@@ -178,33 +178,7 @@ function reset() {
     form[i].value = "";
   }
   localStorage.removeItem("userData");
-  localStorage.removeItem("userData");
-  localStorage.removeItem("userData");
-  localStorage.removeItem("userData");
-  localStorage.removeItem("userData");
-  // eslint-disable-next-line no-undef
-  localStorage.removeItem("userData");
-  localStorage.removeItem("userData");
-  localStorage.removeItem("userData");
-  // eslint-disable-next-line no-undef
-  localStorage.removeItem("userData");
-  localStorage.removeItem("userData");
-  localStorage.removeItem("userData");
-  // eslint-disable-next-line no-undef
-  localStorage.removeItem("userData");
-  // eslint-disable-next-line no-undef
-  localStorage.removeItem("userData");
-  // eslint-disable-next-line no-undef
-  localStorage.removeItem("userData");
-  // eslint-disable-next-line no-undef
-  localStorage.removeItem("userData");
-  // eslint-disable-next-line no-undef
-  localStorage.removeItem("userData");
-  localStorage.removeItem("userData");
-  // eslint-disable-next-line no-undef
-  localStorage.removeItem("userData");
-  localStorage.removeItem("userData");
-  // eslint-disable-next-line no-undef
+
   inputElementCold.click();
   fillpreview();
   profileReset.style.backgroundImage = "url('./assets/images/totoro.jpg')";
