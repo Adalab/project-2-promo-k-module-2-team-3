@@ -16,6 +16,7 @@ const previewElement = document.querySelector(".js-preview__card");
 const inputElementCold = document.querySelector(".js-inputCold");
 const inputElementWarm = document.querySelector(".js-inputWarm");
 const inputElementMedium = document.querySelector(".js-inputMedium");
+const btn = document.querySelector(".js__btn");
 
 let data = {
   palette: "",
@@ -54,6 +55,7 @@ function getInfoToStorage() {
       previewReset.style.backgroundImage = `url(${data.photo})`;
     }
     fillpreview();
+    getErrors();
   }
 }
 
