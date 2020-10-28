@@ -50,9 +50,12 @@ function getInfoToStorage() {
       changeMedium();
       inputElementMedium.click();
     }
-    if (data.photo !== null) {
+    if (data.photo !== "") {
       profileReset.style.backgroundImage = `url(${data.photo})`;
       previewReset.style.backgroundImage = `url(${data.photo})`;
+    } else {
+      profileReset.style.backgroundImage = `url('./assets/images/totoro.jpg')`;
+      previewReset.style.backgroundImage = `url('./assets/images/totoro.jpg')`;
     }
     fillpreview();
     getErrors();
@@ -174,6 +177,32 @@ function reset() {
   for (let i = 0; i < form.length; i++) {
     form[i].value = "";
   }
+  localStorage.removeItem("userData");
+  localStorage.removeItem("userData");
+  localStorage.removeItem("userData");
+  localStorage.removeItem("userData");
+  localStorage.removeItem("userData");
+  // eslint-disable-next-line no-undef
+  localStorage.removeItem("userData");
+  localStorage.removeItem("userData");
+  localStorage.removeItem("userData");
+  // eslint-disable-next-line no-undef
+  localStorage.removeItem("userData");
+  localStorage.removeItem("userData");
+  localStorage.removeItem("userData");
+  // eslint-disable-next-line no-undef
+  localStorage.removeItem("userData");
+  // eslint-disable-next-line no-undef
+  localStorage.removeItem("userData");
+  // eslint-disable-next-line no-undef
+  localStorage.removeItem("userData");
+  // eslint-disable-next-line no-undef
+  localStorage.removeItem("userData");
+  // eslint-disable-next-line no-undef
+  localStorage.removeItem("userData");
+  localStorage.removeItem("userData");
+  // eslint-disable-next-line no-undef
+  localStorage.removeItem("userData");
   localStorage.removeItem("userData");
   // eslint-disable-next-line no-undef
   inputElementCold.click();
